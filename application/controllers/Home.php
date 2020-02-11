@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Welcome extends CI_Controller
+class Home extends CI_Controller
 {
 
 	/**
@@ -22,16 +22,12 @@ class Welcome extends CI_Controller
 	// menampilkan Halaman Login
 	public function index()
 	{
-		$this->load->view('admin/login.php');
+		$this->load->view('menu/v_login.php');
 	}
 	// menampilkan halaman daftar absen user
 	public function daftar_absen()
 	{
-		$this->load->view('admin/v_daftar_absen');
+		$this->load->view('menu/v_daftarabsen');
 	}
 	// menampilkan halaman detail lokasi
-	public function home()
-	{
-		$this->load->view('admin/home');
-	}
 }
