@@ -20,6 +20,13 @@ class Home extends CI_Controller
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 	// menampilkan Halaman Login
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('m_data');
+		$this->load->helper('url');
+	}
+
 	public function index()
 	{
 		$this->load->view('menu/v_beranda.php');
