@@ -9,8 +9,8 @@
 
 <body>
     <?php $this->load->view('templates/_partials/sidenav.php'); ?>
-    <div class="row">
 
+    <div class="wrapper">
         <div class="col-12 col-md-12">
             <div style="text-align: center">
                 <h1>Sistem Informasi Geografis</h1>
@@ -19,8 +19,8 @@
         </div>
     </div>
 
-    <?php $this->load->view('templates/_partials/js.php'); ?>
     <?php $this->load->view('templates/_partials/footer'); ?>
+    <?php $this->load->view('templates/_partials/js.php'); ?>
 </body>
 
 
