@@ -49,6 +49,7 @@ table {
 
 /* Style */
 
+
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -68,29 +69,28 @@ table {
     color: rgb(255, 255, 255);
     text-align: center;
   }
-
-  .sidenav .menu {
-    text-align: justify;
-    margin-left: 29px;
-  }
   
   /* The navigation menu links */
-  .sidenav li {
-    padding: 8px 8px 8px 8px;
+  .sidenav .menu {
+    text-align: justify;
+  }
+  .sidenav .menu ul li {
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 100;
-    letter-spacing: normal;
-    line-height: 30px;
-    text-decoration: none solid rgb(255, 235, 59);
-    font-size: 20px;
-    color: #FFEB3B;
     display: block;
     transition: 0.2s;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
+  .sidenav .menu ul li a {
+    color: #FFEB3B;
+    display: block;
+    text-decoration: none;
+  }
+
+  .sidenav .menu ul li a .fas {
+    width: 30px;
+  }
 
   .sidenav p {
     font-size: 12px;
@@ -115,9 +115,9 @@ table {
 
   
   /* When you mouse over the navigation links, change their color */
-  .sidenav ul li:hover {
-    color: #f1f1f1;
-    cursor: pointer;
+ 
+  .sidenav .menu a:hover {
+    color: #fff;
   }
 
   .sidenav a:hover {
@@ -126,11 +126,9 @@ table {
 
   .sidenav .logo {
     width : 40%; 
-    height : 20%;
+    height : 21%;
     top: 20px;
-    margin-left: 75px;
-    margin-right: 70px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     position: relative;
     background-repeat: no-repeat;
   }
@@ -146,13 +144,12 @@ table {
 
   .btn-logout {
     color: rgb(0, 0, 0);
-    /* background-color: #dc3545; */
     background-color: #FFEB3B;
+    position: sticky;
     opacity: 89%;
     border-color: rgb(223, 209, 87);
     border-radius: 5px;
-    transition: 0.3s;
-    margin-top: 100px;
+    margin-top: 70px;
     font-family: Arial;
     width: 50%;
     height: 7%;
