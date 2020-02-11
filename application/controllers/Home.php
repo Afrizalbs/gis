@@ -22,7 +22,7 @@ class Home extends CI_Controller
 	// menampilkan Halaman Login
 	public function index()
 	{
-		$this->load->view('menu/v_daftarabsen.php');
+		$this->load->view('menu/v_beranda.php');
 	}
 	// menampilkan halaman daftar absen user
 	// menampilkan halaman detail lokasi
