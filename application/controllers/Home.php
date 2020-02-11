@@ -19,6 +19,13 @@ class Home extends CI_Controller
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('m_data');
+		$this->load->helper('url');
+	}
+
 	// menampilkan Halaman Login
 	public function index()
 	{
@@ -27,7 +34,8 @@ class Home extends CI_Controller
 	// menampilkan halaman daftar absen user
 	public function daftar_absen()
 	{
-		$this->load->view('menu/v_daftarabsen.php');
+		$data['tb_geoatt_brt'] = $this->m_data->tampil_data()->result();
+		$this->load->view('menu/v_daftarabsen.php', $data);
 	}
 	// menampilkan halaman detail lokasi
 }
