@@ -5,6 +5,8 @@
             <th>User ID</th>
             <th>Absen Masuk</th>
             <th>Absen Keluar</th>
+            <th>Izin</th>
+            <th>Approve by</th>
             <th>Action</th>
         </tr>
     </thead>
@@ -12,6 +14,8 @@
         <tr>
             <td>223</td>
             <td>mark</td>
+            <td>otto</td>
+            <td>otto</td>
             <td>otto</td>
             <td>
                 <a href="javascriptBox:void(0)" id="jwpopupLink" style="color: #fd7e15; margin-right: 5px" data-toggle="tooltip" data-placement="top" title="Lihat Detail Lokasi">

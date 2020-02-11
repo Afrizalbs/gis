@@ -25,5 +25,9 @@ class Home extends CI_Controller
 		$this->load->view('menu/v_beranda.php');
 	}
 	// menampilkan halaman daftar absen user
+	public function daftar_absen()
+	{
+		$this->load->view('menu/v_daftarabsen.php');
+	}
 	// menampilkan halaman detail lokasi
 }
