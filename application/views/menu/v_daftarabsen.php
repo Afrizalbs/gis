@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <?php $this->load->view('templates/_partials/head.php') ?>
+    <?php $this->load->view('templates/_partials/header.php') ?>
 
 </head>
 

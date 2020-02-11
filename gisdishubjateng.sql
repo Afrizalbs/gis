@@ -2,10 +2,10 @@
 -- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Feb 03, 2020 at 02:16 PM
--- Server version: 5.7.29
--- PHP Version: 7.3.6
+-- Host: 127.0.0.1
+-- Waktu pembuatan: 11 Feb 2020 pada 07.14
+-- Versi server: 10.4.6-MariaDB
+-- Versi PHP: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,33 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `perhubun_absensi`
+-- Database: `gisdishubjateng`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_geoatt_brt`
+-- Struktur dari tabel `admin`
+--
+
+CREATE TABLE `admin` (
+  `username` varchar(20) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `nama` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `admin`
+--
+
+INSERT INTO `admin` (`username`, `password`, `nama`) VALUES
+('dishubjateng', 'af58d45e859e848499d3babb603aed74', 'dishubjateng'),
+('admin', '21232f297a57a5a743894a0e4a801fc3', 'admin');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tb_geoatt_brt`
 --
 
 CREATE TABLE `tb_geoatt_brt` (
@@ -42,11 +62,11 @@ CREATE TABLE `tb_geoatt_brt` (
   `ijin_pulang_cepat` varchar(45) DEFAULT NULL,
   `approve_by` varchar(45) DEFAULT NULL,
   `seen` int(11) DEFAULT NULL,
-  `created_on` timestamp NULL DEFAULT CURRENT_TIMESTAMP
+  `created_on` timestamp NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `tb_geoatt_brt`
+-- Dumping data untuk tabel `tb_geoatt_brt`
 --
 
 INSERT INTO `tb_geoatt_brt` (`id`, `user_id`, `start_date`, `end_date`, `keterangan`, `image`, `lat`, `lang`, `status_approv`, `work`, `ijin_pulang_cepat`, `approve_by`, `seen`, `created_on`) VALUES
@@ -1247,17 +1267,17 @@ INSERT INTO `tb_geoatt_brt` (`id`, `user_id`, `start_date`, `end_date`, `keteran
 --
 
 --
--- Indexes for table `tb_geoatt_brt`
+-- Indeks untuk tabel `tb_geoatt_brt`
 --
 ALTER TABLE `tb_geoatt_brt`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `tb_geoatt_brt`
+-- AUTO_INCREMENT untuk tabel `tb_geoatt_brt`
 --
 ALTER TABLE `tb_geoatt_brt`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1189;
