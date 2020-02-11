@@ -18,7 +18,7 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="menu">
         <ul>
-            <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="<?php base_url(); ?>"><i class="fas fa-home"></i>Home</a></li>
             <li><a href="#"><i class="fas fa-users"></i>Daftar Pegawai</a></li>
             <li><a href="#"><i class="fas fa-address-card"></i>About</a></li>
         </ul>
