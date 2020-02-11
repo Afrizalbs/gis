@@ -2,6 +2,7 @@
 <table class="table">
     <thead class="thead">
         <tr>
+            <th>No.</th>
             <th>User ID</th>
             <th>Absen Masuk</th>
             <th>Absen Keluar</th>
@@ -12,9 +13,11 @@
     </thead>
     <tbody>
         <?php
+        $no = 1;
         foreach ($tb_geoatt_brt as $u) {
         ?>
             <tr>
+                <td><?php echo $no++ ?></td>
                 <td><?php echo $u->user_id ?></td>
                 <td><?php echo $u->start_date ?></td>
                 <td><?php echo $u->end_date ?></td>
