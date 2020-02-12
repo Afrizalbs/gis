@@ -25,6 +25,10 @@ class Home extends CI_Controller
 		parent::__construct();
 		$this->load->model('m_data');
 		$this->load->helper('url');
+		$this->load->model("M_login");
+		if ($this->M_login->isNotLogin()) redirect(site_url('login'));
+		# code...
+
 	}
 
 	public function index()

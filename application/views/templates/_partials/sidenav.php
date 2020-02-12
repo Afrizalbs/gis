@@ -24,5 +24,5 @@
         </ul>
     </div>
 
-    <button class="btn-logout" type="button" href="#">Logout</button>
+    <button class="btn-logout" type="button" href="<?= site_url('login/logout') ?>">Logout</button>
 </div>
