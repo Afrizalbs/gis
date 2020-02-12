@@ -32,7 +32,7 @@ class Login extends CI_Controller
 
                 );
                 $this->session->set_userdata($session); // Buat session sesuai $session
-                redirect('page/welcome'); // Redirect ke halaman welcome
+                redirect('home'); // Redirect ke halaman welcome
             } else {
                 $this->session->set_flashdata('message', 'Password salah'); // Buat session flashdata
                 redirect('login'); // Redirect ke halaman login

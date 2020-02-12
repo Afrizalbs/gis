@@ -16,7 +16,7 @@
 
 <body>
     <!-- membuat form -->
-    <form id="form" action="<?php base_url('auth/login'); ?>" method="POST">
+    <form id="form" action="<?php base_url('login/login') ?>" method="POST">
         <h1 id="head" style="color: rgb(193,166,83)">Login</h1>
         <img class="rounded img-fluid" id="image" style="width:auto;height:auto;margin-left:42px;" src="<?php echo base_url('assets/img/Logo Dishub.png') ?>">
         <div></div>
