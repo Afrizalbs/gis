@@ -25,13 +25,11 @@ class Home extends CI_Controller
 		parent::__construct();
 		$this->load->model('m_data');
 		$this->load->helper('url');
-<<<<<<< Updated upstream
+
 		$this->load->model("M_login");
 		if ($this->session->flashdata('message')) {
 			echo $this->session->flashdata('message');
 		}
-=======
->>>>>>> Stashed changes
 	}
 
 	public function index()
