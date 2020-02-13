@@ -25,11 +25,6 @@ class Home extends CI_Controller
 		parent::__construct();
 		$this->load->model('m_data');
 		$this->load->helper('url');
-
-		$this->load->model("M_login");
-		if ($this->session->flashdata('message')) {
-			echo $this->session->flashdata('message');
-		}
 	}
 
 	public function index()
@@ -37,10 +32,9 @@ class Home extends CI_Controller
 		$this->load->view('menu/v_beranda.php');
 	}
 	// menampilkan halaman daftar absen user
-	public function daftar_absen()
+	function daftar_absen()
 	{
 		$data['tb_geoatt_brt'] = $this->m_data->tampil_data()->result();
 		$this->load->view('menu/v_daftarabsen.php', $data);
 	}
-	// menampilkan halaman detail lokasi
 }

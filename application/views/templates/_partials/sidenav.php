@@ -18,11 +18,11 @@
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="menu">
         <ul>
-            <li><a href="<?php base_url(); ?>"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="#"><i class="fas fa-users"></i>Daftar Pegawai</a></li>
+            <li><a href="<?= base_url('home') ?>"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="<?= base_url('home/daftar_absen') ?>"><i class="fas fa-users"></i>Daftar Pegawai</a></li>
             <li><a href="#"><i class="fas fa-address-card"></i>About</a></li>
         </ul>
     </div>
 
-    <button class="btn-logout" type="button" href="<?= site_url('login/logout') ?>">Logout</button>
+    <button href="<?= base_url('login/logout'); ?>" class="btn-logout" type="submit">Logout</button>
 </div>

@@ -16,16 +16,18 @@
 
 <body>
     <!-- membuat form -->
-    <form id="form" action="<?php base_url('login/login') ?>" method="POST">
+    <form id="form" method="POST" action="<?php echo base_url('login/aksi_login') ?>">
         <h1 id="head" style="color: rgb(193,166,83)">Login</h1>
         <img class="rounded img-fluid" id="image" style="width:auto;height:auto;margin-left:42px;" src="<?php echo base_url('assets/img/Logo Dishub.png') ?>">
         <div></div>
 
         <div class="form-group">
-            <input class="form-control" type="text" name="username" id="formum" placeholder="Username" required />
+            <input class="form-control" type="text" name="username" id="formum" placeholder="Username">
+            <small><span class="text-danger"><?= form_error('username') ?></span></small>
         </div>
         <div class="form-group">
-            <input class="form-control" type="password" name="password" id="formum2" placeholder="Password" required />
+            <input class="form-control" type="password" name="password" id="formum2" placeholder="Password">
+            <small><span class="text-danger"><?= form_error('username') ?></span></small>
         </div>
         <button class="btn btn-light" id="butonas" type="submit">Login</button>
     </form>
