@@ -19,10 +19,13 @@ class Home extends CI_Controller
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	// menampilkan Halaman Login
 	public function __construct()
 	{
 		parent::__construct();
+
+		if (empty($this->session->userdata('login'))) {
+			redirect('login');
+		}
 		$this->load->model('m_data');
 		$this->load->helper('url');
 	}
