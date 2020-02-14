@@ -12,12 +12,13 @@
 
     <div class="wrapper">
         <div id="main">
-            <div class="col-4" id="cari">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="search" placeholder="Search Data">
-                </div>
-            </div>
+
             <div class="table-responsive">
+                <div class="col-4" id="cari">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="search" placeholder="Search Data">
+                    </div>
+                </div>
                 <!-- memuat tabel -->
                 <?php $this->load->view('templates/_partials/tabel.php'); ?>
                 <!-- akhir table -->
@@ -46,6 +47,8 @@
             </div>
         </div>
     </div>
+    <?php $this->load->view('templates/_partials/footer.php'); ?>
+
 
 
     <?php $this->load->view('templates/_partials/js.php'); ?>
@@ -81,5 +84,6 @@
         google.maps.event.addDomListener(window, 'load', initialize);
     </script>
 </body>
+
 
 </html>
