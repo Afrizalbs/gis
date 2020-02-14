@@ -35,9 +35,9 @@ class Home extends CI_Controller
 		$this->load->view('menu/v_beranda.php');
 	}
 	// menampilkan halaman daftar absen user
-	function daftar_absen()
-	{
-		$data['tb_geoatt_brt'] = $this->m_data->tampil_data()->result();
-		$this->load->view('menu/v_daftarabsen.php', $data);
-	}
+	// function daftar_absen()
+	// {
+	// 	$data['tb_geoatt_brt'] = $this->m_data->tampil_data()->result();
+	// 	$this->load->view('menu/v_daftarabsen.php', $data);
+	// }
 }

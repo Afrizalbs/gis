@@ -6,3 +6,4 @@
 <link rel="stylesheet" href="<?php echo base_url('assets/css/styles.css') ?>">
 <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.css') ?>">
 <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css') ?>">
+<!-- <link rel="stylesheet" href="<?php echo base_url('assets/bootstrap/bootstrap.min.css') ?>"> -->

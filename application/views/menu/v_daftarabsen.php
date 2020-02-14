@@ -21,19 +21,11 @@
                 <!-- memuat tabel -->
                 <?php $this->load->view('templates/_partials/tabel.php'); ?>
                 <!-- akhir table -->
-                <nav>
-                    <ul class="pagination justify-content-end">
-                        <li>
-                            <span class="page-link">Sebelumnya</span>
-                        </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li>
-                            <span class="page-link">Selanjutnya</span>
-                        </li>
-                    </ul>
-                </nav>
+                <?php
+                if (isset($links)) {
+                    echo $links;
+                }
+                ?>
 
                 <!--konten pop up box -->
                 <div id="jwpopupBox" class="jwpopup">

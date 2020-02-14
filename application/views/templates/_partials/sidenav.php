@@ -19,7 +19,7 @@
     <div class="menu">
         <ul>
             <li><a href="<?= base_url('home'); ?>"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="<?= base_url('home/daftar_absen'); ?>"><i class="fas fa-users"></i>Daftar Pegawai</a></li>
+            <li><a href="<?= base_url('pagination'); ?>"><i class="fas fa-users"></i>Daftar Pegawai</a></li>
             <li><a href="#"><i class="fas fa-address-card"></i>About</a></li>
             <li><a href="<?= base_url('login/logout'); ?>"><i class="fas fa-sign-out-alt"></i>Logout</a></li>
         </ul>

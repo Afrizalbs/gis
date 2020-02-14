@@ -187,11 +187,12 @@ table {
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px 2px #23245e;
     float: right;
+    margin-top: 10px;
     }
 
     .container .ico_sidebar {
     margin-left: -26px;
-    margin-top: 8px;
+    margin-top: 15px;
     }
 
   .nav {
