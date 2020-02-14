@@ -57,19 +57,22 @@ table {
     z-index: 100; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    /* background-color: rgb(0, 0, 0); Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-    background-attachment: scroll;
+    transition: all 0.5s ease; /* 0.5 second transition effect to slide in the sidenav */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
     background-color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(135deg, rgb(76, 136, 239) 0%, rgb(23, 228, 217) 100%);
-    background-position: 0% 0%;
-    background-repeat: repeat;
     color: rgb(255, 255, 255);
     text-align: center;
+    
   }
   
+  .sidenav::-webkit-scrollbar{
+    display: none;
+  }
   /* The navigation menu links */
   .sidenav .menu {
     text-align: justify;
@@ -77,7 +80,6 @@ table {
   .sidenav .menu ul li {
     text-decoration: none;
     display: block;
-    transition: 0.2s;
     padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -90,6 +92,21 @@ table {
 
   .sidenav .menu ul li a .fas {
     width: 30px;
+  }
+
+  .menu li::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 3px;
+    background-color: #1c1c1c;
+    -webkit-transition: width .2s ease-in;
+      -moz-transition:  width .2s ease-in;
+       -ms-transition:  width .2s ease-in;
+            transition: width .2s ease-in;
   }
 
   .sidenav p {
