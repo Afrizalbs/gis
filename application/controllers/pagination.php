@@ -6,6 +6,9 @@ class Pagination extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        if (empty($this->session->userdata('login'))) {
+            redirect('login');
+        }
         $this->load->library('pagination');
         $this->load->helper('url');
         $this->load->model('m_data');
