@@ -18,10 +18,11 @@
             </div>
         </div>
     </div>
+    <div></div>
 
     <?php $this->load->view('templates/_partials/footer'); ?>
     <?php $this->load->view('templates/_partials/js.php'); ?>
 </body>
-
+ 
 
 </html>
