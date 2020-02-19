@@ -1,328 +1,248 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 /* Style */
 
-
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 100; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: all 0.5s ease; /* 0.5 second transition effect to slide in the sidenav */
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(135deg, rgb(76, 136, 239) 0%, rgb(23, 228, 217) 100%);
-    color: rgb(255, 255, 255);
-    text-align: center;
-    
-  }
-  
-  .sidenav::-webkit-scrollbar{
-    display: none;
-  }
-  /* The navigation menu links */
-  .sidenav .menu {
-    text-align: justify;
-  }
-  .sidenav .menu ul li {
-    text-decoration: none;
-    display: block;
-    padding: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .sidenav .menu ul li a {
-    color: #FFEB3B;
-    display: block;
-    text-decoration: none;
-  }
-
-  .sidenav .menu ul li a .fas {
-    width: 30px;
-  }
-
-  .menu li::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    height: 100%;
-    width: 3px;
-    background-color: #1c1c1c;
-    -webkit-transition: width .2s ease-in;
-      -moz-transition:  width .2s ease-in;
-       -ms-transition:  width .2s ease-in;
-            transition: width .2s ease-in;
-  }
-
-  .sidenav p {
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: -5px;
-    color: rgba(60, 64, 73, 0.712);
-    line-height: 15px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .sidenav h3 {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 20px;
-    color: #3f1871;
-    font-weight: 300;
-    padding-bottom: 5px;
-    margin-top: 0px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  
-  /* When you mouse over the navigation links, change their color */
- 
-  .sidenav .menu a:hover {
-    color: #fff;
-  }
-
-  .sidenav a:hover {
-    color: #fff;
-  }
-
-  .sidenav .logo {
-    width : 40%; 
-    height : 21%;
-    top: 20px;
-    margin-bottom: 25px;
-    position: relative;
-    background-repeat: no-repeat;
-  }
-  
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-
-  .btn-logout {
-    color: rgb(0, 0, 0);
-    background-color: #FFEB3B;
-    position: sticky;
-    opacity: 89%;
-    border-color: rgb(223, 209, 87);
-    border-radius: 5px;
-    margin-top: 70px;
-    font-family: Arial;
-    width: 50%;
-    height: 7%;
-  }
-
-  .btn-logout:hover {
-  color: #fff;
-  background-color: #c82333;
-  border-color: #bd2130;
-  }
-
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-    transition: margin-left .5s;
-    padding: 20px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 15px;}
-  }
-
-  .container {
-    margin: auto;
-  }
-
-  .header {
-    margin-right: -20px;
-  }
-
-  .header .judul {
-    color:#3f1871;
-    font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 2px 2px 2px #23245e;
-    float: right;
-    }
-
-    .container .ico_sidebar {
-    margin-left: -26px;
-    margin-top: 8px;
-    }
-
-  .nav {
-    top: 0;
-    position: fixed;
-    width: 100%;
-    background-color: #fff;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    overflow: auto;
-    z-index: 7;
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 100; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	overflow-x: hidden; /* Disable horizontal scroll */
+	transition: all 0.5s ease; /* 0.5 second transition effect to slide in the sidenav */
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	background-color: #18191f;
+	padding-top: 40px;
+	padding-left: 8px;
+	/* background-image: linear-gradient(135deg, rgb(76, 136, 239) 0%, rgb(23, 228, 217) 100%);     */
 }
 
-  .wrapper {
-    background-color: #eaeaea;
-    margin-top: 60px;
-    margin-bottom: 20px;
-    
-  }
+.sidenav::-webkit-scrollbar {
+	display: none;
+}
+/* The navigation menu links */
+.sidenav .menu a {
+	text-decoration: none;
+	font-size: 25px;
+	color: #555;
+	text-align: justify;
+	padding: 8px;
+	display: block;
+	transition: 0.3s;
+}
 
-  #cari {
-    float: right;
-  }
+.sidenav .menu a .fas {
+	font-size: 20px;
+	margin-right: 20px;
+}
 
-  .thead {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(0, 0, 0, 0);
-    background-image: linear-gradient(135deg, rgb(76, 136, 239) 0%, rgb(23, 228, 217) 100%);
-    color: rgb(255, 255, 255);
-  }
+.sidenav .menu a:hover .fas {
+	color: #fff;
+}
 
-  .pagination{
-    float: right;
-  }
+.sidenav .menu a:hover,
+.offcanvas a:focus {
+	color: lightskyblue;
+}
+.sidenav a:hover,
+.offcanvas a:focus {
+	color: #f1f1f1;
+}
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
 
-  /* jwpopup box style */
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+	transition: margin-left 0.5s;
+	padding: 20px;
+	overflow: hidden;
+	width: 100%;
+}
+body {
+	overflow-x: hidden;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 15px;
+	}
+	.sidenav .menu a {
+		font-size: 15px;
+	}
+}
+
+.container {
+	margin: auto;
+}
+
+.company {
+	margin-right: -20px;
+}
+
+.company .judul {
+	color: #3f1871;
+	font-family: Arial, Helvetica, sans-serif;
+	text-shadow: 2px 2px 2px #23245e;
+	float: right;
+}
+
+.container .ico_sidebar {
+	margin-left: -26px;
+	margin-top: 8px;
+}
+
+.header {
+	top: 0;
+	position: fixed;
+	width: 100%;
+	background-color: #eaeaea;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow: auto;
+	z-index: 7;
+}
+
+.wrapper {
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.page-wrapper {
+	padding-top: 11vh;
+}
+.input-group {
+	margin-top: 11vh;
+}
+.thead {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: linear-gradient(
+		135deg,
+		rgb(76, 136, 239) 0%,
+		rgb(23, 228, 217) 100%
+	);
+	color: rgb(255, 255, 255);
+}
+
+.pagination {
+	float: right;
+}
+
+/* jwpopup box style */
 .jwpopup {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 110px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.7);
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 110px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.7);
 }
 .jwpopup-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  max-width: 700px;
-  height: 400px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	max-width: 700px;
+	height: 400px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
 }
 
 .jwpopup-head {
-  font-size: 11px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 1px 16px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: linear-gradient(135deg, rgb(76, 136, 239) 0%, rgb(23, 228, 217) 100%);
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 1px 16px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: linear-gradient(
+		135deg,
+		rgb(76, 136, 239) 0%,
+		rgb(23, 228, 217) 100%
+	);
 }
-.jwpopup-main {padding: 5px 16px;}
+.jwpopup-main {
+	padding: 5px 16px;
+}
 .jwpopup-foot {
-font-size: 12px;
-  padding: .5px 16px;
-  color: #ffffff;
-  background: #006faa; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#006faa, #002c44); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#006faa, #002c44); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#006faa, #002c44); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#006faa, #002c44); /* Standard syntax */
+	font-size: 12px;
+	padding: 0.5px 16px;
+	color: #ffffff;
+	background: #006faa; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(
+		#006faa,
+		#002c44
+	); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#006faa, #002c44); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(
+		#006faa,
+		#002c44
+	); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#006faa, #002c44); /* Standard syntax */
 }
 
 /* tambahkan efek animasi */
 @-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
 }
 
 @keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
 }
 
 /* style untuk tombol close */
 .close {
-margin-top: 7px;
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+	margin-top: 7px;
+	color: white;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
 }
-.close:hover, .close:focus {
-  color: #999999;
-  text-decoration: none;
-  cursor: pointer;
+.close:hover,
+.close:focus {
+	color: #999999;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .footer {
-  background-color: #fff;
-  z-index: 7;
-  bottom: 0px;
-  position: fixed;
-  width: 100%;
-  margin-top: 8px;
-  padding: 5px;
+	background-color: #eaeaea;
+	bottom: 0px;
+	position: relative;
+	width: 100%;
+	height: 30vh;
+	padding: auto;
 }

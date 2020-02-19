@@ -1,5 +1,5 @@
 <!-- Awal Tabel -->
-<table class="table">
+<table id="tabel" class="table">
     <thead class="thead">
         <tr>
             <th>No.</th>

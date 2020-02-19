@@ -18,7 +18,7 @@ class Pagination extends CI_Controller
         //set params
         $params = array();
         //set records per page
-        $limit_page = 20;
+        $limit_page = 100;
         $page = ($this->uri->segment(3)) ? ($this->uri->segment(3) - 1) : 0;
         $total = $this->m_data->get_total();
 

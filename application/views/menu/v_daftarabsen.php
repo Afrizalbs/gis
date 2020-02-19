@@ -7,6 +7,7 @@
 </head>
 
 <body>
+    <?php $this->load->view('templates/_partials/header-content.php'); ?>
     <!-- memuat sidebar -->
     <?php $this->load->view('templates/_partials/sidenav.php'); ?>
 
@@ -14,11 +15,12 @@
         <div id="main">
 
             <div class="table-responsive">
-                <div class="col-4" id="cari">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="search" placeholder="Search Data">
+                <div class="input-group col-4 mb-3">
+                    <input type="text" class="form-control" placeholder="Cari user" id="search" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
                     </div>
                 </div>
+
                 <!-- memuat tabel -->
                 <?php $this->load->view('templates/_partials/tabel.php'); ?>
                 <!-- akhir table -->
@@ -52,6 +54,18 @@
 
 
     <?php $this->load->view('templates/_partials/js.php'); ?>
+
+    <script type="text/javascript">
+        var $u = $('#tabel tr');
+
+        $('#search').keyup(function() {
+            var val = $.trim($(this).val()).replace(/ +/g, '').toLowerCase();
+            $u.show().filter(function() {
+                var text = $(this).text().replace(/\s+/g, '').toLowerCase();
+                return !~text.indexOf(val);
+            }).hide();
+        });
+    </script>
 
     <!-- JS untuk tooltip -->
     <script type="text/javascript">
