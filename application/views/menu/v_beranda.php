@@ -1,29 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php $this->load->view('templates/_partials/header.php') ?>
 
-<head>
-    <?php $this->load->view('templates/_partials/header.php') ?>
-
-</head>
-
-
-<body>
-    <?php $this->load->view('templates/_partials/header-content.php'); ?>
-    <?php $this->load->view('templates/_partials/sidenav.php'); ?>
-    <div class="wrapper">
-        <div class="page-wrapper">
-            <div class="col-12 col-md-12">
-                <div style="text-align: center">
-                    <h1>Sistem Informasi Geografis</h1>
-                    <p>Pemetaan Absen Pegawai Shelter BRT Trans Jateng secara Geografis</p>
+<?php $this->load->view('templates/_partials/sidenav.php'); ?>
+<div id="layoutSidenav_content">
+    <main style="padding-top: 30px">
+        <div class="container-fluid">
+            <h1 class="mt-5" style="text-align: right">Dashboard</h1>
+            <ol class="breadcrumb mb-4">
+                <li class="breadcrumb-item active">Dashboard</li>
+            </ol>
+            <div class="row">
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-primary text-white mb-4">
+                        <div class="card-body">Primary Card</div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="#">View Details</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-warning text-white mb-4">
+                        <div class="card-body">Warning Card</div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="#">View Details</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-success text-white mb-4">
+                        <div class="card-body">Success Card</div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="#">View Details</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="card bg-danger text-white mb-4">
+                        <div class="card-body">Danger Card</div>
+                        <div class="card-footer d-flex align-items-center justify-content-between">
+                            <a class="small text-white stretched-link" href="#">View Details</a>
+                            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
+    </main>
     <?php $this->load->view('templates/_partials/footer'); ?>
-    <?php $this->load->view('templates/_partials/js.php'); ?>
+</div>
 </body>
-
 
 </html>
