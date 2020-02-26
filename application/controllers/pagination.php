@@ -12,7 +12,6 @@ class Pagination extends CI_Controller
         $this->load->library('pagination');
         $this->load->helper('url');
         $this->load->model('m_data');
-        $this->load->model('m_detail');
     }
 
     public function index()
