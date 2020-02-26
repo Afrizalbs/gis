@@ -46,7 +46,8 @@
                                         <td data-field="lat"><?php echo $latitude ?></td>
                                         <td data-field="lang"><?php echo $longitude ?></td>
                                         <td class="text-center">
-                                            <a href="<?= base_url() ?>map" style="color: #fd7e15; margin-right: 5px" data-toggle="tooltip" data-placement="top" title="Lihat Detail Lokasi">
+                                            <a href="<?= base_url('maps/view/');
+                                                        echo $u['id'] ?>" style="color: #fd7e15; margin-right: 5px" data-toggle="tooltip" data-placement="top" title="Lihat Detail Lokasi">
                                                 <span><img src="<?php echo base_url('assets/img/icons/map-marked.svg') ?>" width="25" height="25"></span>
                                             </a>
                                             <a id="delete" style="color: #fd7e15" data-toggle="tooltip" data-placement="top" title="Hapus Data">

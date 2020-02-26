@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gis Absen Dishub</title>
+    <title> Gis Absen Dishub</title>
+    <link rel="icon" href="<?= base_url('assets/img/logo jateng.png') ?>">
 
     <!-- <link rel="stylesheet" href="<?php echo base_url('assets/css/styles.css') ?>">
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.css') ?>">
