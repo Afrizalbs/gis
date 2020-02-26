@@ -20,7 +20,7 @@
         <div class="container-fluid">
             <h1 class="mt-4">Maps Detail</h1>
             <ol class="breadcrumb mb-4">
-                <li class="breadcrumb-item"><a href="<?= base_url('home'); ?>">Dashboard</a></li>
+                <li class="breadcrumb-item"><a href="<?= base_url('home'); ?>">Beranda</a></li>
                 <li class="breadcrumb-item"><a href="<?= base_url('pagination'); ?>">Tables Absen</a></li>
                 <li class="breadcrumb-item active">Maps Detail</li>
             </ol>

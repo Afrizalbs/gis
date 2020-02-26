@@ -12,17 +12,12 @@ class Pagination extends CI_Controller
         $this->load->library('pagination');
         $this->load->helper('url');
         $this->load->model('m_data');
+        $this->load->model('m_detail');
     }
 
     public function index()
     {
         $d['data'] = $this->m_data->show_data();
         $this->load->view('menu/v_daftarabsen', $d);
-    }
-
-    public function chart()
-    {
-        $x['data'] = $this->m_data->get_chart_data();
-        $this->load->view('menu/v_chart.php', $x);
     }
 }
