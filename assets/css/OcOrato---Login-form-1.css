@@ -59,7 +59,7 @@
 
 body {
   background-image: url("../../assets/img/login picture.jfif");
-  background-size: 1280px 700px;
+  background-size: cover;
   /* background-color: dodgerblue; */
   background-repeat: no-repeat;
   height: auto;

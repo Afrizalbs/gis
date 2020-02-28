@@ -1,15 +1,3 @@
-<!-- membuat sidebar -->
-<!-- <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="menu">
-        <a href="<?= base_url('home'); ?>"><i class="fas fa-home"></i>Beranda</a>
-        <a href="<?= base_url('pagination'); ?>"><i class="fas fa-users"></i>Pegawai</a>
-        <a href="#"><i class="fas fa-address-card"></i>About</a>
-        <a href="<?= base_url('login/logout'); ?>"><i class="fas fa-sign-out-alt"></i>Logout</a>
-    </div> -->
-<!--<button href="<?= base_url('login/logout'); ?>" class="btn-logout" type="submit">Logout</button>-->
-<!-- </div> -->
-
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <a class="navbar-brand" href="<?= base_url('home'); ?>">GIS | Absen</a><button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button><!-- Navbar Search-->
@@ -38,10 +26,11 @@
                             Beranda
                         </a>
                         <div class="sb-sidenav-menu-heading">Pegawai</div>
-                        <a class="nav-link" href="charts.html">
+                        <a class="nav-link" href="#">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                             Charts Absen
-                        </a><a class="nav-link" href="<?= base_url('pagination'); ?>">
+                        </a>
+                        <a class="nav-link" href="<?= base_url('pagination'); ?>">
                             <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                             Tabel Absen
                         </a>
