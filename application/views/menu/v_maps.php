@@ -15,22 +15,23 @@
 <!-- Navigation -->
 <?php $this->load->view('templates/_partials/sidenav.php'); ?>
 <!-- Page Content -->
-<div id="layoutSidenav_content">
-    <main style="padding-top: 50px; padding-bottom:80px">
-        <div class="container-fluid">
-            <h1 class="mt-4">Maps Detail</h1>
-            <ol class="breadcrumb mb-4">
-                <li class="breadcrumb-item"><a href="<?= base_url('home'); ?>">Beranda</a></li>
-                <li class="breadcrumb-item"><a href="<?= base_url('pagination'); ?>">Tables Absen</a></li>
-                <li class="breadcrumb-item active">Maps Detail</li>
-            </ol>
-            <div class="mt-3" id="map_div">
-                <div style="height:440px;" id="map"></div> <!-- Map Div -->
+<div id="layoutSidenav">
+    <div id="layoutSidenav_content">
+        <main style="padding-bottom:80px">
+            <div class="container-fluid">
+                <h1 class="mt-2">Maps Detail</h1>
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item"><a href="<?= base_url('home'); ?>">Beranda</a></li>
+                    <li class="breadcrumb-item"><a href="<?= base_url('pagination'); ?>">Tables Absen</a></li>
+                    <li class="breadcrumb-item active">Maps Detail</li>
+                </ol>
+                <div class="mt-3" id="map_div">
+                    <div style="height:440px;" id="map"></div> <!-- Map Div -->
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
 </div>
-
 <script>
     function initMap() {
         var marker;

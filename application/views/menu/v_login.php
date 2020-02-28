@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Gis Dishub</title>
+    <title>GIS Absen | Login</title>
+    <link rel="icon" href="<?= base_url('assets/img/Logo jateng.png') ?>">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
@@ -27,7 +28,7 @@
         </div>
         <div class="form-group">
             <input class="form-control" type="password" name="password" id="formum2" placeholder="Password">
-            <small><span class="text-danger"><?= form_error('username') ?></span></small>
+            <small><span class="text-danger"><?= form_error('password') ?></span></small>
         </div>
         <button class="btn btn-light" id="butonas" type="submit">Login</button>
     </form>

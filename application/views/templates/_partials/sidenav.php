@@ -20,7 +20,7 @@
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <img src="<?= base_url('assets/img/logo jateng.png') ?>" width="50%" height="60%" style="margin-left: 50px; margin-top: 15px;">
-                        <div class="sb-sidenav-menu-heading">Core</div>
+                        <div class="sb-sidenav-menu-heading">Menu</div>
                         <a class="nav-link" href="<?= base_url('home'); ?> ">
                             <div class="sb-nav-link-icon"><i class="fa fa-home"></i></div>
                             Beranda

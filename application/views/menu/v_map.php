@@ -14,7 +14,7 @@
 
     <style type="text/css">
         #mapid {
-            height: 480px;
+            height: 435px;
         }
     </style>
 
@@ -23,20 +23,20 @@
 <body>
 
     <?php $this->load->view('templates/_partials/sidenav.php'); ?>
-
-    <div id="layoutSidenav_content">
-        <main style="padding-top: 50px; padding-bottom:80px">
-            <div class="container-fluid">
-                <h1 class="mt-4">PEMETAAN ABSEN</h1>
-                <ol class="breadcrumb mb-4">
-                    <li class="breadcrumb-item"><a href="<?= base_url('home'); ?>">Beranda</a></li>
-                    <li class="breadcrumb-item active">Pemetaan</li>
-                </ol>
-                <div id="mapid"></div>
-            </div>
-        </main>
+    <div id="layoutSidenav">
+        <div id="layoutSidenav_content">
+            <main style="padding-bottom:80px">
+                <div class="container-fluid">
+                    <h1 class="mt-2">Pemetaan Absen</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a href="<?= base_url('home'); ?>">Beranda</a></li>
+                        <li class="breadcrumb-item active">Pemetaan</li>
+                    </ol>
+                    <div id="mapid"></div>
+                </div>
+            </main>
+        </div>
     </div>
-
     <?php $this->load->view('templates/_partials/footer.php'); ?>
 
     <script src="https://kit.fontawesome.com/10e53f85be.js" crossorigin="anonymous"></script>
