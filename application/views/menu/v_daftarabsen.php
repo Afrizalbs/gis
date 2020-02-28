@@ -3,23 +3,13 @@
 
 <!-- memuat sidebar -->
 <?php $this->load->view('templates/_partials/sidenav.php'); ?>
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 <div id="layoutSidenav">
     <div id="layoutSidenav_content">
         <main style="padding-bottom:80px">
             <div class="container-fluid">
-<<<<<<< Updated upstream
-                <h1 class="mt-4">Tables</h1>
-                <ol class="breadcrumb mb-4">
-                    <li class="breadcrumb-item"><a href="<?= base_url('home'); ?>">Dashboard</a></li>
-=======
                 <h1 class="mt-2">Tables</h1>
                 <ol class="breadcrumb mb-4">
                     <li class="breadcrumb-item"><a href="<?= base_url('home'); ?>">Beranda</a></li>
->>>>>>> Stashed changes
                     <li class="breadcrumb-item active">Tables</li>
                 </ol>
                 <div class="card mb-4">
@@ -27,11 +17,7 @@
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-<<<<<<< Updated upstream
                                 <thead>
-=======
-                                <thead class="thead-dark">
->>>>>>> Stashed changes
                                     <tr>
                                         <th>No.</th>
                                         <th>User ID</th>
@@ -64,12 +50,8 @@
                                                             echo $u['id'] ?>" style="color: #fd7e15; margin-right: 5px" data-toggle="tooltip" data-placement="top" title="Lihat Detail Lokasi">
                                                     <span><img src="<?php echo base_url('assets/img/icons/map-marked.svg') ?>" width="25" height="25"></span>
                                                 </a>
-<<<<<<< Updated upstream
                                                 <a href="<?= base_url('maps/delete/');
                                                             echo $u['id'] ?>" id="delete" style="color: #fd7e15" data-toggle="tooltip" data-placement="top" title="Hapus Data">
-=======
-                                                <a id="delete" style="color: #fd7e15" data-toggle="tooltip" data-placement="top" title="Hapus Data">
->>>>>>> Stashed changes
                                                     <span><img src="<?php echo base_url('assets/img/icons/trash.svg') ?>" width="25" height="25"></span>
                                             </td>
                                         </tr>
