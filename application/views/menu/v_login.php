@@ -19,7 +19,7 @@
     <!-- membuat form -->
     <form id="form" method="POST" action="<?php echo base_url('login/aksi_login') ?>">
         <h1 id="head" style="color: rgb(193,166,83)">Login</h1>
-        <img class="rounded img-fluid" id="image" style="width:auto;height:auto;margin-left:42px;" src="<?php echo base_url('assets/img/Logo Dishub.png') ?>">
+        <img class="rounded img-fluid" id="image" style="width:auto;height:auto;margin-left:42px;" src="<?php echo base_url('assets/img/Logo jateng.png') ?>">
         <div></div>
 
         <div class="form-group">

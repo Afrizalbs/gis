@@ -19,12 +19,4 @@ class Pagination extends CI_Controller
         $d['data'] = $this->m_data->show_data();
         $this->load->view('menu/v_daftarabsen', $d);
     }
-
-    public function chart()
-    {
-        $data['chart'] = $this->m_data->get_chart_data();
-        $this->load->view('menu/v_chart', $data);
-        print_r($data);
-        die();
-    }
 }

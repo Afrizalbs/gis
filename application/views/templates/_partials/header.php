@@ -8,9 +8,7 @@
     <title> GIS | Absen</title>
     <link rel="icon" href="<?= base_url('assets/img/logo jateng.png') ?>">
 
-    <!-- <link rel="stylesheet" href="<?php echo base_url('assets/css/styles.css') ?>">
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.css') ?>">
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css') ?>"> -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
     <link href="<?php echo base_url('assets/bootstrap/dist/css/styles.css') ?> " rel="stylesheet" />
     <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
 

@@ -58,12 +58,9 @@
 }
 
 body {
-  background-image: url("../../assets/img/login picture.jfif");
-  background-size: cover;
-  /* background-color: dodgerblue; */
+  background-image: url("../../assets/img/trans-jateng.jpg");
+  background-size: 100% 135%;
   background-repeat: no-repeat;
-  height: auto;
-  width: auto;
   display: block;
 }
 

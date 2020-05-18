@@ -61,7 +61,8 @@
                     lat: <?php echo $view_lokasi->lat ?>,
                     lng: <?php echo $view_lokasi->lang ?>
                 },
-                map: map
+                map: map,
+                animation: google.maps.Animation.BOUNCE
             });
 
         <?php } ?>

@@ -1,4 +1,4 @@
-<footer class="py-4 bg-light mt-auto fixed-bottom">
+<footer class="py-4 bg-light mt-auto">
     <div class="container-fluid">
         <div class="d-flex align-items-center justify-content-between small">
             <div class="text-muted">Copyright &copy; Your Website 2019</div>
@@ -27,3 +27,5 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1HBqMYvcjI161URlIQ96gkmiPlSYPpyc&callback=initMap"></script>
 <script src="https://kit.fontawesome.com/10e53f85be.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>

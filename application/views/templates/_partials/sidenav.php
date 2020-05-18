@@ -26,10 +26,6 @@
                             Beranda
                         </a>
                         <div class="sb-sidenav-menu-heading">Pegawai</div>
-                        <a class="nav-link" href="#">
-                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                            Charts Absen
-                        </a>
                         <a class="nav-link" href="<?= base_url('pagination'); ?>">
                             <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                             Tabel Absen
