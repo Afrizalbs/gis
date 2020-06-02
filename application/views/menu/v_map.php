@@ -35,9 +35,10 @@
                     <div id="mapid"></div>
                 </div>
             </main>
+            <?php $this->load->view('templates/_partials/footer.php'); ?>
         </div>
     </div>
-    <?php $this->load->view('templates/_partials/footer.php'); ?>
+
 
     <script src="https://kit.fontawesome.com/10e53f85be.js" crossorigin="anonymous"></script>
     <script src="<?php echo base_url('assets/leaflet/leaflet.js') ?> "></script>

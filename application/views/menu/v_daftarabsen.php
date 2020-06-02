@@ -63,9 +63,10 @@
                 </div>
             </div>
         </main>
+        <?php $this->load->view('templates/_partials/footer.php'); ?>
     </div>
 </div>
-<?php $this->load->view('templates/_partials/footer.php'); ?>
+
 
 <!-- JS untuk tooltip -->
 <script type="text/javascript">

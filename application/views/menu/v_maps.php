@@ -30,6 +30,7 @@
                 </div>
             </div>
         </main>
+        <?php $this->load->view('templates/_partials/footer.php'); ?>
     </div>
 </div>
 <script>
@@ -91,8 +92,8 @@
     }
 </script>
 
-<?php $this->load->view('templates/_partials/footer.php'); ?>
 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1HBqMYvcjI161URlIQ96gkmiPlSYPpyc&callback=initMap"></script>
 </body>
 
 </html>

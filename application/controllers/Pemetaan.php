@@ -19,4 +19,8 @@ class Pemetaan extends CI_Controller
         $data = $this->db->get('tb_geoatt_brt')->result();
         echo json_encode($data);
     }
+    public function shelter()
+    {
+        $this->load->view('menu/v_shelter');
+    }
 }
