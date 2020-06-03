@@ -51,7 +51,7 @@
                                                     <span><img src="<?php echo base_url('assets/img/icons/map-marked.svg') ?>" width="25" height="25"></span>
                                                 </a>
                                                 <a href="<?= base_url('maps/delete/');
-                                                            echo $u['id'] ?>" id="delete" style="color: #fd7e15" data-toggle="tooltip" data-placement="top" title="Hapus Data">
+                                                            echo $u['id'] ?>" id="delete" style="color: #fd7e15" data-toggle="tooltip" data-placement="top" title="Hapus Data" onclick="return confirm('Yakin Hapus?')">
                                                     <span><img src="<?php echo base_url('assets/img/icons/trash.svg') ?>" width="25" height="25"></span>
                                             </td>
                                         </tr>
